@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  /* body */
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #233544;
+}
+
+/* navbar */
+.nav {
+  position: fixed;
+  color: black;
+  background-color: rgb(71, 68, 68);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+
+.nav a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+
+.nav a:hover {
+  color: darkblue;
+  border: 1px solid #cccc;
+  background-color: #cccc;
+  font-weight: 600;
+  padding: 2px 5px;
+  border-radius: 8px;
+  transform: scale(1.01);
+}
+
+/* Hero Section */
+.hero {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  color: red;
+  font-size: 20px;
+  padding: 60px 20px;
+}
+
+/* About Section */
+.photo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 20%;
+}
+
+#about {
+  font-size: 20px;
+}
+img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  margin: 10px;
+  transition: transform 0.5s ease;
+}
+
+img:hover {
+  transform: rotate(-10deg) scale(1.1);
+  box-shadow: 2px 0 2px #cccc;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+  color: white;
+}
+
+.text .about {
+  width: 60%;
+  color: chartreuse;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Skills Section */
+
+.skills .contact,
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
+
+#skills h2 {
+  font-size: 50px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+  color: red;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  padding: 20px;
+  border: 2px solid steelblue;
+  box-shadow: 0 5px 15px #cccc;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  height: 322px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in;
+}
+
+.box:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid #cccc;
+  box-shadow: 0 5px 20px #cccc;
+  transform: scale(1.05);
+}
+.box h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+/* Form */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #cccc;
+  box-shadow: 0 5px 10px #cccc;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 50px;
+  color: white;
+}
+
+.contact h2 {
+  font-size: 50px;
+  font-weight: 1000;
+  margin-bottom: 40px;
+  color: red;
+}
+
+.contact h3 {
+  color: black;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+.contact p {
+  margin-top: 2px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #cccc;
+  border: 2px solid #cccc;
+  background-color: black;
+  border-radius: 4px;
+  padding: 2px 2px;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.contact a:hover {
+  color: red;
+  background-color: black;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 2px;
+  border-radius: 8px;
+  border: 2px solid #cccc;
+  transition: transform 0.5s ease;
+}
+
+input:hover {
+  color: white;
+  background-color: blue;
+  border: none;
+  transform: scale(1.02);
+}
+
+textarea {
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 2px solid #cccc;
+  transition: transform 0.5s ease;
+}
+
+textarea:hover {
+  color: white;
+  background-color: blue;
+  border: none;
+  transform: scale(1.02);
+}
+
+button {
+  padding: 5px 2px 5px;
+  text-align: center;
+  background-color: #cccc;
+  font-weight: 700;
+  font-size: 20px;
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  margin-top: -15px;
+}
+
+button:hover {
+  background: red;
+  color: black;
+  text-shadow: 10px;
+  border: none;
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+/* Responsiveness */
+
+/*Mobile Devices*/
+@media (min-width: 320px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*Tablets/iPads*/
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*Desktop Screens*/
+@media (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
